@@ -71,6 +71,4 @@ fl = set(map(int,raw_input().split()))
 
 u = el.union(fl)
 
-print u
-
 print len(u)
