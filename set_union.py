@@ -65,12 +65,10 @@ Hence, total is 13 students.
 """
 
 e = input()
-el = set(map(int,raw_input().split()))
+el = set(map(int,input().split()))
 f = input()
-fl = set(map(int,raw_input().split()))
+fl = set(map(int,input().split()))
 
 u = el.union(fl)
-
-print u
 
 print len(u)
