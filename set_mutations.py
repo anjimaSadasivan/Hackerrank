@@ -102,11 +102,11 @@ Sum of elements of set A after these operations is 38.
 LA = input()
 A = set(map(int,raw_input().split()))
 
-N = input()
+N = int(input())
 
-for i in xrange(N):
-	k = raw_input().split()
-	ktemp = set(map(int,raw_input().split()))
+for i in range(N):
+	k = input().split()
+	ktemp = set(map(int,input().split()))
 	if k[0] == 'update':
 		A.update(ktemp)
 	elif k[0] == 'intersection_update':
@@ -116,6 +116,6 @@ for i in xrange(N):
 	elif k[0] == 'symmetric_difference_update':
 		A.symmetric_difference_update(ktemp)
 	else:
-		print 'Incorrect parameters'
+		print ('Incorrect parameters')
 
-print A
+print(sum( A))
